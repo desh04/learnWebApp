@@ -1,0 +1,1 @@
+Controller are just to redirect the client request to the service layer
