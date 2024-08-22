@@ -1,5 +1,7 @@
 package com.desh.learnWebApp.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,8 +9,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity // if have a class whose table needed to be created use this Annotation
 public class Product {
 
+    @Id
     private int prodId;
     private String prodName;
     private int price;
